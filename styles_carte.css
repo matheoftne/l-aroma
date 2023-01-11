@@ -1,0 +1,272 @@
+/* Bordure du site */
+body{
+    margin: 0;
+}
+
+.entete{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo de L'Aroma */
+header{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    flex-basis: 1;
+}
+
+/* Menu de naivgation */
+nav{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 50px;
+    color: #208481;
+    text-align: center;
+	padding: 20px;
+}
+
+nav ul{
+    margin: 0;
+	text-align: center;
+	padding: 100px;
+}
+
+nav li{
+    list-style: none;
+	display: inline;
+    margin: 0 40px;
+}
+
+nav a{
+    position:relative;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    color: #208481;
+    text-decoration:none;   
+}
+
+li a:after{
+    content:'';
+    width:0%;
+    margin-left:50%;
+    height:2px;
+    bottom:0;
+    left:0;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    border-radius:40%;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition:all 0.5s;
+    position:absolute;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition:all 0.5s;
+}
+nav a:hover:after {
+    background-color: #fbbb44;
+    width:60%;
+    margin-left:20%;
+}
+
+nav a:hover{
+    color: #fbbb44;
+}
+
+/* Titres */
+main{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-bottom: 200px;
+}
+
+h1{
+    margin-top: 60px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    color: #208481;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.boisson h3{
+    color: white;
+}
+
+.manger h3{
+    color: #208481;
+}
+
+.boisson{
+    padding: 140px 40px;
+    background-color: #208481;
+    text-align: center;   
+}
+
+.manger{
+    padding: 140px 40px;
+    border: 8px solid #208481;
+    text-align: center;
+}
+
+.manger a, .boisson a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.button, 
+.button::after {
+    transition: all 0.3s;
+}
+
+.button {
+    background: none;
+    border: 3px solid white;
+    border-radius: 44px;
+    color: white;
+    font-size: 15px;
+    font-weight: 750;
+    padding: 15px 10px;
+    position: relative;
+    cursor: pointer;
+    width: 35%;
+    padding: 10px;
+}
+
+.button::before,
+.button::after {
+    background: white;
+    content: "";
+    position: absolute;
+    border-radius: 44px;
+    z-index: -1;
+}
+
+.button:hover {
+    color: #fbbb44;
+}
+
+.button::after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+}
+
+.button:hover:after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.manger .button::before,
+.manger .button::after{
+    background: white;
+    content: "";
+    position: absolute;
+    border-radius: 44px;
+    z-index: -1;
+}
+
+.manger .button{
+    background: #208481;
+    color: white;
+    border: 3px solid #208481;
+}
+
+.manger .button:hover{
+    color: #fbbb44;
+}
+
+.manger .button:hover::after{
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+}
+
+.manger:hover::after{
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 100%;
+}
+
+.boisson{
+    margin-left: 18.5%;
+}
+/* Footer */
+footer{
+    display: flex;
+    background-color: #208481;
+    padding-bottom: 70px;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    padding-top: 60px;
+    align-items: center;
+    align-content: center;
+    padding-left: 220px;
+}
+
+.minilogo{
+    order: 1;
+    padding-left: 140px;
+}
+
+.mentions a{
+    order: 2;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 120px;
+}
+
+.mentions{
+    border-left: 3px solid #FFFFFF;
+    padding-right: 80px;
+}
+
+.reseaux{
+    order: 3;
+    border-left: 3px solid #FFFFFF;
+    margin-right: 90px;
+}
+
+h2{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 265px;
+}
+
+[src="instagram.png"]{
+    margin-left: 200px;
+}

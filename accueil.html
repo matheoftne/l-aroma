@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>
+            L'Aroma
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script_carroussel.js" defer></script>
+    </head>
+    
+    <body>
+        <div class="entete">
+            <header>
+                <div class="logo">
+                    <img src="./LOGO_ENTIER_COULEUR.png" alt="L'Aroma" width="596" height="138"/>
+                </div>
+            </header>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./accueil.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="./carte.html">La carte</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <div class="banniere">
+                <img src="./BANNIÈRE_COMMANDE_EN_LIGNE.png" alt="banniere" style="width:100%">
+            </div>
+
+            <!-- Carroussel salles -->
+            <div class=slideshow>
+
+                <input name="slideshow" id=salle_img1 type="radio" checked>
+                <input name="slideshow" id=salle_img2 type="radio">
+                <input name="slideshow" id=salle_img3 type="radio">
+                <input name="slideshow" id=salle_img4 type="radio"> 
+                
+                <ul>
+                    <li class=img1>
+                        <img src="./salle_chill.png" alt>
+                    </li>
+                        <li class=img2>
+                        <img src="./salle_de_travail.png" alt>
+                    </li>
+                        <li class=img3>
+                        <img src ="./salle_fada.png" alt>
+                    </li>
+                        <li class=img4>
+                        <img src="./salle_mystère.png" alt>
+                    </li>
+                </ul>
+                
+                <div class=precedent>
+                <label class=img1 for=salle_img1></label>
+                <label class=img2 for=salle_img2></label>
+                <label class=img3 for=salle_img3></label>
+                <label class=img4 for=salle_img4></label>
+                </div>
+                
+                <div class=suivant>
+                <label class=img1 for=salle_img1></label>
+                <label class=img2 for=salle_img2></label>
+                <label class=img3 for=salle_img3></label>
+                <label class=img4 for=salle_img4></label>
+                </div>
+                
+                <div class=puces>
+                    <label class="img1" for=salle_img1>
+                        <span class=actif_puces></span>
+                    </label>
+                    <label class="img2" for=salle_img2>
+                        <span class=actif_puces></span>
+                    </label>
+                    <label class="img3" for=salle_img3>
+                        <span class=actif_puces></span>
+                    </label>	
+                        <label class="img4" for=salle_img4>
+                    <span class=actif_puces></span>
+                    </label>
+                </div>
+                
+                </div>	
+
+            <h1 id="cock">Nos cocktails</h1>
+
+            <div class="cocktails-boite">
+                <img src="./contenue_photos.png" alt="Cocktails">
+            </div>
+
+            <a href="./carte.html" class="button">Carte</a>
+
+            <h1>Avis</h1>
+
+            <!-- carroussel avis -->
+            <div class="avis-container">
+                <div class="avis fade">
+                    <img src="./avis_1.png" style="width:100%">
+                </div>
+                <div class="avis fade">
+                    <img src="./avis_2.png" style="width:100%">
+                </div>
+                <div class="avis fade">
+                    <img src="./avis_3.png" style="width:100%">
+                </div>
+                <div class="avis fade">
+                    <img src="./avis_4.png" style="width:100%">
+                </div>
+                <div class="avis fade">
+                    <img src="./avis_5.png" style="width:100%">
+                </div>
+                <div class="avis fade">
+                    <img src="./avis_6.png" style="width:100%">
+                </div>
+                <div class="avis fade">
+                    <img src="./avis_7.png" style="width:100%">
+                </div>
+                <div class="avis fade">
+                    <img src="./avis_8.png" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="point" onclick="currentSlide(0)"></span>
+                    <span class="point" onclick="currentSlide(1)"></span>
+                    <span class="point" onclick="currentSlide(2)"></span>
+                    <span class="point" onclick="currentSlide(3)"></span>
+                    <span class="point" onclick="currentSlide(4)"></span>
+                    <span class="point" onclick="currentSlide(5)"></span>
+                    <span class="point" onclick="currentSlide(6)"></span>
+                    <span class="point" onclick="currentSlide(7)"></span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div id="minilogo">
+                <img src="./logo_version_blanc.png" alt="logo de L'Aroma" width="150" height="152">
+            </div>
+
+            <div class="mentions">
+                <a href="">Mentions Légales</a>
+                <br>
+                <a href="">Politiques de confidentialités</a>
+                <br>
+                <a href="">A propos</a>
+            </div>
+
+            <div class="reseaux">
+                <h2>Réseaux sociaux</h2>
+                <img src="instagram.png" alt="Instagram" style="width: 10%;">
+                <img src="twitter.png" alt="Twitter" style="width: 10%;">
+                <img src="linkedin_(1).png" alt="Linkedin" style="width: 10%;">
+                <img src="facebook.png" alt="Facebook" style="width: 10%;">
+            </div>
+        </footer>
+
+    </body>
+</html>
